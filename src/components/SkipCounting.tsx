@@ -35,11 +35,11 @@ import React from "react";
         console.log(event.target.value+"count "+count)
         console.log("new number "+skipNumber+", current result "+result)
       }
-     const DoSkipMath =(result:number,skipNumber:number) => {
+//      const DoSkipMath =(result:number,skipNumber:number) => {
 
-        setResult(result+skipNumber);
+//         setResult(result+skipNumber);
 
-}
+// }
 const ResetResult=()=>{
 setResult(0)
 
