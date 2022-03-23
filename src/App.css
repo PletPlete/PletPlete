@@ -3,29 +3,52 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
+.button {
+width: 75%;
+color: black;
+background-color: rgb(167, 203, 245);
 
+
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
+    
+    float: left;
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  background-color: rgb(17, 171, 177);
+    display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(15, 15, 15);
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.menu {
+
+  align-items: left;
+  width: 15%;
+  float: left;
+  margin: 3px;
+}
+.content {
+  margin: 2px;
+  align-items: right;
+float: right;
+  width: 79%;
+  background-color: cornsilk;
+  color: black;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +59,114 @@
     transform: rotate(360deg);
   }
 }
+
+.Menu{
+  background-color: rgb(194, 218, 247);
+text-align: center;
+display: block;
+cursor: pointer;
+padding: 15px;
+letter-spacing: 0.5mm;
+}
+
+/* .item {
+  padding: 18px 28px;
+  cursor: pointer;
+  transition: color .3s ease-out;
+  text-decoration: none;
+  color: #111;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 5px 0; */
+  
+  a:link {
+    color: #fff;
+    margin:10px ;
+    text-decoration: none;
+    padding: 5px;
+  }
+  a:visited{
+    color: rgb(2, 0, 93);
+    text-decoration: none;
+  }
+  a:hover{
+    background-color: rgb(13, 29, 27);
+    color: gainsboro;
+    text-shadow: goldenrod;
+    transform: scale(1.3);
+    text-decoration: none;
+    border-radius: 20px;
+    
+  }
+  
+
+.container {
+  text-align: center;
+  }
+  .toggle-switch {
+  position: relative;
+  width: 75px;
+  display: inline-block;
+  text-align: left;
+  top: 8px;
+  }
+  .checkbox {
+  display: display-inside;
+  }
+  .label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0 solid #bbb;
+  border-radius: 20px;
+  }
+  .inner {
+  display: block;
+  width: 200%;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: -100%;
+  border-radius: 20px;
+  transition: margin 0.3s ease-in 0s;
+  }
+  .inner:before,
+  .inner:after {
+  float: left;
+  width: 50%;
+  height: 36px;
+  padding: 0;
+  line-height: 36px;
+  color: #fff;
+  font-weight: bold;
+  box-sizing: border-box;
+
+  }
+  .inner:before {
+  content: "Marc";
+  padding-left: 10px;
+  background-color: #060;
+  color: #fff;
+  }
+  .inner:after {
+  content: "Liam";
+  padding-right: 10px;
+  background-color: #bbb;
+  color: #fff;
+  text-align: right;
+  }
+
+  .pyramid{
+    width: 50px;
+    height: 50px;
+  }
+  .pyramidhidden{
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+  }
+  .PyramidLineTwo{
+    visibility: hidden;
+    width: 25px;
+    height: 50px;
+  }

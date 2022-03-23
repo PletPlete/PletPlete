@@ -11,3 +11,102 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.react-switch-checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.react-switch-checkbox:before{
+  content: Marc;
+  color: #fff;
+}
+
+.react-switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  background: rgb(34, 56, 255);
+  border-radius: 100px;
+  position: relative;
+  transition: background-color .3s;
+}
+
+.react-switch-label .react-switch-button {
+  content: 'Marc';
+  color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+.react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+  
+}
+.react-switch-label:active .react-switch-button {
+  width: 60px;
+  
+}
+
+
+.toggle-switch {
+  position: relative;
+  width: 75px;
+  display: inline-block;
+  text-align: left;
+  top: 8px;
+  }
+  .checkbox {
+  display: display-inside;
+  }
+  .label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0 solid #bbb;
+  border-radius: 20px;
+  }
+  .inner {
+  display: block;
+  width: 200%;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: -100%;
+  border-radius: 20px;
+  transition: margin 0.3s ease-in 0s;
+  }
+  .inner:before,
+  .inner:after {
+  float: left;
+  width: 50%;
+  height: 36px;
+  padding: 0;
+  line-height: 36px;
+  color: #fff;
+  font-weight: bold;
+  box-sizing: border-box;
+
+  }
+  .inner:before {
+  content: "Marc";
+  padding-left: 10px;
+  background-color: #060;
+  color: #fff;
+  }
+  .inner:after {
+  content: "Liam";
+  padding-right: 10px;
+  background-color: #bbb;
+  color: #fff;
+  text-align: right;
+  }
