@@ -8,7 +8,7 @@ import {
   Link
 } from "react-router-dom";
 //import TestComponent from './components/TestComponent';
-// import SkipCounting from '../src/components/SkipCounting';
+import SkipCounting from '../src/components/SkipCounting';
 
 //import About from '../src/components/about'
 // import AboutA from './components/AboutA';
@@ -57,7 +57,7 @@ function App() {
               {/* {isAutheticated?  <Link to="/about">About  </Link> :'' }
               {isAutheticated?  <Link to="/aboutb">About B  </Link>:''} */}
             
-           {/* <Link to="/SkipCounting">Skip counting  </Link> */}
+           <Link to="/SkipCounting">Skip counting  </Link>
               {/* <Link to="/Pyramids">Pyramid Math</Link> */}
               {/* <Link to="/Test">test  </Link> */}
               {/* <Link to="///Create">Create  </Link> */}
@@ -82,13 +82,14 @@ function App() {
 </> */}
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        {/* <Routes> */}
+        <Routes>
           {/* <Route path="/about">
             <AboutA />
           </Route>
           <Route path="/aboutb">
             <AboutB />
           </Route> */}
+          <Route path='/SkipCounting' element={<SkipCounting/>} />
           {/* <Route path="/SkipCounting">
             <SkipCounting />
           </Route> */}
@@ -101,10 +102,11 @@ function App() {
           {/* <Route path='/Create'>
             <Create></Create>
           </Route> */}
-          {/* <Route path="/">
+          <Route path='/welcome' element={<Home/>} />
+         {/* <Route path="/">
             <Home />
-          </Route>
-        </Routes> */}
+          </Route> */}
+        </Routes> 
       </div>
     </Router>
   );
