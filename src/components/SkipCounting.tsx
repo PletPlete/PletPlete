@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import {  SyntheticEvent, useState } from "react";
 import React from "react";
 //import * as _ from 'lodash';
 //import {Zoom} from 'react-toastify'
@@ -44,6 +44,9 @@ const ResetResult=()=>{
 setResult(0)
 
 }
+const DoSkipCounting = (event:SyntheticEvent)=>{
+     
+}
 
 // useEffect(()=>{
 //     DoSkipMath()
@@ -51,7 +54,8 @@ setResult(0)
    
 // },[])
 
-return <div><h3>Skip Countng</h3>
+return <div className='Constainer'>
+    <h3>Skip Countng</h3>
 
     <label>Choose number to skip</label> 
     <input type="number" onChange={handleNumber}//{(e)=>hanleNumber(e)} 
@@ -59,6 +63,12 @@ return <div><h3>Skip Countng</h3>
     <button onClick={()=>setResult(result+skipNumber)}>Skip</button><br></br>
     <label>Result: </label><p>{result}</p>
     <button onClick={ResetResult}>Reset Results</button>
+    <div>
+        <br></br><br></br>
+        <button onClick={DoSkipCounting}>Let me try</button>
+        <p>Coming soon</p>
+
+    </div>
 </div>
  
 }

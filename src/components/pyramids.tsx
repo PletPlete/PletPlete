@@ -63,7 +63,7 @@ else
 // }
 
 return(
-<div>
+<div  className='Constainer'>
 {/* <p>pyramids numbers: {ThirdRandomNb},{RandomNb+SecondRandomNb},{RandomNb+SecondRandomNb+ThirdRandomNb}</p> */}
 <p></p>
 <input type="number" className="pyramidhidden" ></input>
