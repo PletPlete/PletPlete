@@ -48,7 +48,7 @@ function App() {
         <nav className="Menu">
            
             
-              <Link to="/">Home  </Link>
+              {/* <Link to="/">Home  </Link> */}
            
             
               {/* {isAutheticated?  <Link to="/about">About  </Link> :'' }
@@ -100,7 +100,7 @@ function App() {
           {/* <Route path='/Create'>
             <Create></Create>
           </Route> */}
-          <Route path='/welcome' element={<Home/>} />
+          <Route path='/welcome' element={<SkipCounting/>} />
          {/* <Route path="/">
             <Home />
           </Route> */}
