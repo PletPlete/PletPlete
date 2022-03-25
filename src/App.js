@@ -9,14 +9,11 @@ import {
 } from "react-router-dom";
 //import TestComponent from './components/TestComponent';
 import SkipCounting from '../src/components/SkipCounting';
-
+import PyramidMath from './components/pyramids';
 //import About from '../src/components/about'
 // import AboutA from './components/AboutA';
 // import AboutB from './components/AboutB';
 //import ToggleSwitch from './components/ToggleSwitch';
-
-//import PyramidMath from './components/pyramids';
-//import Create from './components/Create'
 
 
 // function Header()
@@ -58,7 +55,7 @@ function App() {
               {isAutheticated?  <Link to="/aboutb">About B  </Link>:''} */}
             
            <Link to="/SkipCounting">Skip counting  </Link>
-              {/* <Link to="/Pyramids">Pyramid Math</Link> */}
+              <Link to="/Pyramids">Pyramid Math</Link>
               {/* <Link to="/Test">test  </Link> */}
               {/* <Link to="///Create">Create  </Link> */}
             
@@ -96,6 +93,7 @@ function App() {
           {/* <Route path="/Test">
             <TestComponent />
           </Route> */}
+          <Route path='/Pyramids' element={<PyramidMath />} />
           {/* <Route path="/Pyramids">
             <PyramidMath></PyramidMath>
           </Route> */}
